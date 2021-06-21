@@ -6,15 +6,32 @@ namespace BibleCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, enter your name\n");
+            Begin:
+            Console.WriteLine("\nHello, enter your name\n");
 
             string name = Console.ReadLine();
 
             Console.WriteLine("\n" + SimpleString.Welcome(name));
 
-            Console.WriteLine("\n\nPress a key, please");
+            Console.WriteLine("\nDo you wish to continue?");
 
-            Console.ReadKey();
+            Console.WriteLine("\ntrue or false\n");
+
+            bool decision;
+
+            try
+            {
+                decision = Convert.ToBoolean(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                decision = false;
+            }
+
+            if (decision == true)
+            {
+                goto Begin;
+            }
 
             Console.WriteLine("\n-------------------------\nGoodbye!");
 
