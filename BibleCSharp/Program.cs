@@ -6,34 +6,36 @@ namespace BibleCSharp
     {
         static void Main(string[] args)
         {
-            Begin:
-            Console.WriteLine("\nHello, enter your name\n");
+            MainMenu();
+        }
 
-            string name = Console.ReadLine();
+        public static void MainMenu()
+        {
+        Menu:
+            Console.WriteLine("\nWelcome! Enter the command of the program you want to run:\n");
 
-            Console.WriteLine("\n" + SimpleString.Welcome(name));
+            Console.WriteLine("SimpleString");
 
-            Console.WriteLine("\nDo you wish to continue?");
+            Console.WriteLine("SpecialCharacters");
 
-            Console.WriteLine("\ntrue or false\n");
+            Console.WriteLine("\nType 'Exit' to finish\n");
 
-            bool decision;
+            string selectedOption = Console.ReadLine().ToLower();
 
-            try
+            switch (selectedOption)
             {
-                decision = Convert.ToBoolean(Console.ReadLine());
+                case "simplestring":
+                    SimpleString.Welcome();
+                    break;
+                case "specialcharacters":
+                    SpecialCharacters.ExamplesOfSpecialCharacters();
+                    break;
+                case "exit":
+                    Console.WriteLine("\n-------------------------\nGoodbye!");
+                    break;
+                default:
+                    goto Menu;
             }
-            catch (Exception)
-            {
-                decision = false;
-            }
-
-            if (decision == true)
-            {
-                goto Begin;
-            }
-
-            Console.WriteLine("\n-------------------------\nGoodbye!");
 
             Console.ReadKey();
         }

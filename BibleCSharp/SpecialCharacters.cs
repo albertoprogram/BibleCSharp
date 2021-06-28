@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace BibleCSharp
 {
-    public static class SimpleString
+    public static class SpecialCharacters
     {
-        public static void Welcome()
+        public static void ExamplesOfSpecialCharacters()
         {
         Begin:
 
-            Console.WriteLine("\nHello, enter your name\n");
-
-            string name = Console.ReadLine();
-
-            Console.WriteLine("\n" + "Welcome " + name + "!");
+            Console.WriteLine("Welcome to SpecialCharacters");
 
             Console.ReadKey();
 
