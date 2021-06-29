@@ -12,7 +12,15 @@ namespace BibleCSharp
         {
         Begin:
 
-            Console.WriteLine("Welcome to SpecialCharacters");
+            Console.WriteLine("\nWelcome to SpecialCharacters");
+
+            Console.ReadKey();
+
+            Console.WriteLine("\n");
+            
+            Console.WriteLine(@"Tab Special Character \t");
+
+            Console.WriteLine("\nHello\tWorld");
 
             Console.ReadKey();
 
