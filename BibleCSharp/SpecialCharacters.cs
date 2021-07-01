@@ -18,9 +18,17 @@ namespace BibleCSharp
 
             Console.WriteLine("\n");
             
-            Console.WriteLine(@"Tab Special Character \t");
+            Console.WriteLine(@"1) Tab Special Character \t");
 
             Console.WriteLine("\nHello\tWorld");
+
+            Console.ReadKey();
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine(@"2) Car Return Special Character \r");
+
+            Console.WriteLine("\nHello\rWorld");
 
             Console.ReadKey();
 
