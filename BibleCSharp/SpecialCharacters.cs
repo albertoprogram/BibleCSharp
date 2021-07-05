@@ -32,6 +32,14 @@ namespace BibleCSharp
 
             Console.ReadKey();
 
+            Console.WriteLine("\n");
+
+            Console.WriteLine(@"3) Vertical Tab Special Character \v");
+
+            Console.WriteLine("\nHello\vWorld");
+
+            Console.ReadKey();
+
             Console.WriteLine("\nDo you wish to continue?");
 
             Console.WriteLine("\ntrue or false\n");
