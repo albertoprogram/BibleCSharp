@@ -17,7 +17,7 @@ namespace BibleCSharp
             Console.ReadKey();
 
             Console.WriteLine("\n");
-            
+
             Console.WriteLine(@"1) Tab Special Character \t");
 
             Console.WriteLine("\nHello\tWorld");
@@ -37,6 +37,22 @@ namespace BibleCSharp
             Console.WriteLine(@"3) Vertical Tab Special Character \v");
 
             Console.WriteLine("\nHello\vWorld");
+
+            Console.ReadKey();
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine(@"4) Print Special Character \f");
+
+            Console.WriteLine("\nHello\fWorld");
+
+            Console.ReadKey();
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine(@"5) New Line Special Character \f");
+
+            Console.WriteLine("\nHello\nWorld");
 
             Console.ReadKey();
 
