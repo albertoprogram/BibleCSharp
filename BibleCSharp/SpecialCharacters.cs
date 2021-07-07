@@ -56,6 +56,14 @@ namespace BibleCSharp
 
             Console.ReadKey();
 
+            Console.WriteLine("\n");
+
+            Console.WriteLine(@"6) \x Special Character");
+
+            Console.WriteLine("\nHello\x20World");
+
+            Console.ReadKey();
+
             Console.WriteLine("\nDo you wish to continue?");
 
             Console.WriteLine("\ntrue or false\n");
