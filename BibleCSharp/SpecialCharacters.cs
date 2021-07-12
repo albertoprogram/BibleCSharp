@@ -50,7 +50,7 @@ namespace BibleCSharp
 
             Console.WriteLine("\n");
 
-            Console.WriteLine(@"5) New Line Special Character \f");
+            Console.WriteLine(@"5) New Line Special Character \n");
 
             Console.WriteLine("\nHello\nWorld");
 
@@ -69,6 +69,14 @@ namespace BibleCSharp
             Console.WriteLine(@"7) \u Special Character");
 
             Console.WriteLine("\nHello\u0020World");
+
+            Console.ReadKey();
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine(@"8) \\ Special Character");
+
+            Console.WriteLine("\nHello\\World");
 
             Console.ReadKey();
 
