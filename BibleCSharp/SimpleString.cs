@@ -16,7 +16,7 @@ namespace BibleCSharp
 
             string name = Console.ReadLine();
 
-            Console.WriteLine("\n" + "Welcome " + name + "!");
+            Console.WriteLine("\n" + "Welcome " + '\'' + name + '\'' + "!");
 
             Console.ReadKey();
 
