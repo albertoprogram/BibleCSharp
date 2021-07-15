@@ -22,6 +22,10 @@ namespace BibleCSharp
 
             Console.WriteLine("EnumPizza");
 
+            Console.WriteLine("typeof");
+
+            Console.WriteLine("CheckedUnchecked");
+
             Console.WriteLine("\nType 'Exit' to finish\n");
 
             string selectedOption = Console.ReadLine().ToLower();
@@ -44,12 +48,30 @@ namespace BibleCSharp
                     General general2 = new General();
                     general2.EnumPizza();
                     break;
+                case "typeof":
+                    ClassTypeOf classTypeOf = new ClassTypeOf();
+                    classTypeOf.MethodTypeOf();
+                    break;
+                case "checkedunchecked":
+                    CheckedUnchecked.MathOperation();
+                    break;
                 case "exit":
                     Console.WriteLine("\n-------------------------\nGoodbye!");
                     break;
                 default:
                     goto Menu;
             }
+        }
+    }
+
+    public class ClassTypeOf
+    {
+        public void MethodTypeOf()
+        {
+
+            Console.WriteLine("The type of the variable is: {0}", typeof(int));
+
+            Console.ReadKey();
         }
     }
 }
