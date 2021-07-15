@@ -26,6 +26,8 @@ namespace BibleCSharp
 
             Console.WriteLine("CheckedUnchecked");
 
+            Console.WriteLine("BitwiseComplement");
+
             Console.WriteLine("\nType 'Exit' to finish\n");
 
             string selectedOption = Console.ReadLine().ToLower();
@@ -54,6 +56,10 @@ namespace BibleCSharp
                     break;
                 case "checkedunchecked":
                     CheckedUnchecked.MathOperation();
+                    break;
+                case "bitwisecomplement":
+                    General general3 = new General();
+                    general3.BitwiseComplement();
                     break;
                 case "exit":
                     Console.WriteLine("\n-------------------------\nGoodbye!");

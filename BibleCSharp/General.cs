@@ -29,7 +29,20 @@ namespace BibleCSharp
 
         public void EnumPizza()
         {
-            Console.WriteLine("CodPizza:{0} - {1}",(int)Pizza.CheeseLovers,Pizza.CheeseLovers);
+            Console.WriteLine("CodPizza:{0} - {1}", (int)Pizza.CheeseLovers, Pizza.CheeseLovers);
+
+            Console.ReadKey();
+        }
+
+        public void BitwiseComplement()
+        {
+            int int1 = 123;
+
+            Console.WriteLine(int1);
+
+            int1 = ~int1;
+
+            Console.WriteLine(int1);
 
             Console.ReadKey();
         }
