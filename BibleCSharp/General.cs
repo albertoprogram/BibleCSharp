@@ -46,5 +46,13 @@ namespace BibleCSharp
 
             Console.ReadKey();
         }
+
+        public void IncreaseDecrease()
+        {
+            int int1 = 123;
+
+            Console.WriteLine(int1++); // print 123
+            Console.WriteLine(++int1); // print 125
+        }
     }
 }

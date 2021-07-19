@@ -28,6 +28,8 @@ namespace BibleCSharp
 
             Console.WriteLine("BitwiseComplement");
 
+            Console.WriteLine("IncreaseDecrease");
+
             Console.WriteLine("\nType 'Exit' to finish\n");
 
             string selectedOption = Console.ReadLine().ToLower();
@@ -60,6 +62,10 @@ namespace BibleCSharp
                 case "bitwisecomplement":
                     General general3 = new General();
                     general3.BitwiseComplement();
+                    break;
+                case "increasedecrease":
+                    General general4 = new General();
+                    general4.IncreaseDecrease();
                     break;
                 case "exit":
                     Console.WriteLine("\n-------------------------\nGoodbye!");
