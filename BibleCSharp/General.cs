@@ -53,6 +53,19 @@ namespace BibleCSharp
 
             Console.WriteLine(int1++); // print 123
             Console.WriteLine(++int1); // print 125
+
+            Console.ReadKey();
+        }
+
+        public void ConditionalLogicalOperator()
+        {
+            int intVar = 5;
+
+            Console.WriteLine("The value: {0}", (intVar == 5) ? "Is 5" : "Is not 5");
+
+            Console.WriteLine("The value: {0}", (intVar == 3) ? "Is 3" : "Is not 3");
+
+            Console.ReadKey();
         }
     }
 }

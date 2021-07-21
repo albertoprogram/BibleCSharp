@@ -30,9 +30,11 @@ namespace BibleCSharp
 
             Console.WriteLine("IncreaseDecrease");
 
+            Console.WriteLine("9) Conditional Logical Operator");
+
             Console.WriteLine("\nType 'Exit' to finish\n");
 
-            string selectedOption = Console.ReadLine().ToLower();
+            string selectedOption = Console.ReadLine().ToLower().Substring(0,1);
 
             switch (selectedOption)
             {
@@ -66,6 +68,10 @@ namespace BibleCSharp
                 case "increasedecrease":
                     General general4 = new General();
                     general4.IncreaseDecrease();
+                    break;
+                case "9":
+                    General general5 = new General();
+                    general5.ConditionalLogicalOperator();
                     break;
                 case "exit":
                     Console.WriteLine("\n-------------------------\nGoodbye!");
