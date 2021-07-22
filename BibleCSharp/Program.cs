@@ -34,6 +34,8 @@ namespace BibleCSharp
 
             Console.WriteLine("10) Output Parameter");
 
+            Console.WriteLine("11) Exponentiation");
+
             Console.WriteLine("\nType '0' to finish\n");
 
             int selectedOption = Convert.ToInt32(Console.ReadLine());
@@ -80,6 +82,13 @@ namespace BibleCSharp
                     string outputParameter;
                     general6.OutputParameterMethod(out outputParameter);
                     Console.WriteLine(outputParameter);
+                    Console.ReadKey();
+                    break;
+                case 11:
+                    General general1 = new General();
+                    double result;
+                    general1.Exponentiation(5, 3, out result);
+                    Console.WriteLine(result);
                     Console.ReadKey();
                     break;
                 case 0:
