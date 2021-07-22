@@ -14,66 +14,75 @@ namespace BibleCSharp
         Menu:
             Console.WriteLine("\nWelcome! Enter the command of the program you want to run:\n");
 
-            Console.WriteLine("SimpleString");
+            Console.WriteLine("1) SimpleString");
 
-            Console.WriteLine("SpecialCharacters");
+            Console.WriteLine("2) SpecialCharacters");
 
-            Console.WriteLine("MyCharacter");
+            Console.WriteLine("3) MyCharacter");
 
-            Console.WriteLine("EnumPizza");
+            Console.WriteLine("4) EnumPizza");
 
-            Console.WriteLine("typeof");
+            Console.WriteLine("5) typeof");
 
-            Console.WriteLine("CheckedUnchecked");
+            Console.WriteLine("6) CheckedUnchecked");
 
-            Console.WriteLine("BitwiseComplement");
+            Console.WriteLine("7) BitwiseComplement");
 
-            Console.WriteLine("IncreaseDecrease");
+            Console.WriteLine("8) IncreaseDecrease");
 
             Console.WriteLine("9) Conditional Logical Operator");
 
-            Console.WriteLine("\nType 'Exit' to finish\n");
+            Console.WriteLine("10) Output Parameter");
 
-            string selectedOption = Console.ReadLine().ToLower().Substring(0,1);
+            Console.WriteLine("\nType '0' to finish\n");
+
+            int selectedOption = Convert.ToInt32(Console.ReadLine());
 
             switch (selectedOption)
             {
-                case "simplestring":
+                case 1:
                     SimpleString.Welcome();
                     break;
-                case "specialcharacters":
+                case 2:
                     SpecialCharacters.ExamplesOfSpecialCharacters();
                     break;
-                case "mycharacter":
+                case 3:
                     General general = new General();
                     string messageFromClass = general.MyCharacter();
                     Console.WriteLine(messageFromClass);
                     Console.ReadKey();
                     break;
-                case "enumpizza":
+                case 4:
                     General general2 = new General();
                     general2.EnumPizza();
                     break;
-                case "typeof":
+                case 5:
                     ClassTypeOf classTypeOf = new ClassTypeOf();
                     classTypeOf.MethodTypeOf();
                     break;
-                case "checkedunchecked":
+                case 6:
                     CheckedUnchecked.MathOperation();
                     break;
-                case "bitwisecomplement":
+                case 7:
                     General general3 = new General();
                     general3.BitwiseComplement();
                     break;
-                case "increasedecrease":
+                case 8:
                     General general4 = new General();
                     general4.IncreaseDecrease();
                     break;
-                case "9":
+                case 9:
                     General general5 = new General();
                     general5.ConditionalLogicalOperator();
                     break;
-                case "exit":
+                case 10:
+                    General general6 = new General();
+                    string outputParameter;
+                    general6.OutputParameterMethod(out outputParameter);
+                    Console.WriteLine(outputParameter);
+                    Console.ReadKey();
+                    break;
+                case 0:
                     Console.WriteLine("\n-------------------------\nGoodbye!");
                     break;
                 default:

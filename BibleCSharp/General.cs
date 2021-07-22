@@ -67,5 +67,10 @@ namespace BibleCSharp
 
             Console.ReadKey();
         }
+
+        public void OutputParameterMethod(out string outputParameter)
+        {
+            outputParameter = "Output Parameter";
+        }
     }
 }
