@@ -73,9 +73,23 @@ namespace BibleCSharp
             outputParameter = "Output Parameter";
         }
 
-        public void Exponentiation(double numberBase,double power,out double number)
+        public void Exponentiation(double numberBase, double power, out double number)
         {
             number = Math.Pow(numberBase, power);
+        }
+
+        public void ArrayAsParameters(params int[] paramArray)
+        {
+            foreach (int itemParamArray in paramArray) Console.WriteLine(itemParamArray);
+
+            Console.ReadKey();
+        }
+
+        public void ArrayAsParameters2(int[] paramArray)
+        {
+            foreach (int itemParamArray in paramArray) Console.WriteLine(itemParamArray);
+
+            Console.ReadKey();
         }
     }
 }

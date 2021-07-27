@@ -36,6 +36,8 @@ namespace BibleCSharp
 
             Console.WriteLine("11) Exponentiation");
 
+            Console.WriteLine("12) Arrays as Parameters");
+
             Console.WriteLine("\nType '0' to finish\n");
 
             int selectedOption = Convert.ToInt32(Console.ReadLine());
@@ -90,6 +92,11 @@ namespace BibleCSharp
                     general1.Exponentiation(5, 3, out result);
                     Console.WriteLine(result);
                     Console.ReadKey();
+                    break;
+                case 12:
+                    General general7 = new General();
+                    general7.ArrayAsParameters(4, 5, 6, 7);
+                    general7.ArrayAsParameters2(new int[] { 9, 8, 7, 6 });
                     break;
                 case 0:
                     Console.WriteLine("\n-------------------------\nGoodbye!");
